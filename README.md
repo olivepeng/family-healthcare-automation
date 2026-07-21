@@ -24,7 +24,7 @@ Users can simply send health records through LINE, and the system automatically 
 - [🔐 Security](#-security)
 - [🛣 Roadmap](#-roadmap)
 - [🛠 Technologies](#-technologies)
-- [📚 What I Learned](#-what-i-learned)
+- [📚 Technical Highlights](#-technical-highlights)
 - [👩‍💻 Author](#-author)
 - [📄 License](#-license)
 
@@ -347,14 +347,8 @@ Google Apps Script → Script Properties
 
 Future improvements:
 
-- [ ] Family member management
-- [ ] Reminder notifications
-- [ ] Medication history
 - [ ] Export CSV
-- [ ] Dashboard
 - [ ] Data visualization
-- [ ] AI symptom analysis
-- [ ] Email reports
 
 ---
 
@@ -371,7 +365,7 @@ Future improvements:
 
 ---
 
-# 📚 What I Learned
+# 📚 Technical Highlights
 
 Through this project, I practiced:
 
@@ -400,8 +394,6 @@ Interested in:
 - CI/CD
 - Android Development
 - Software Quality
-
-[GitHub](https://github.com/<your-username>) · [LinkedIn](https://linkedin.com/in/<your-profile>) · [Email](mailto:<your-email>)
 
 ---
 

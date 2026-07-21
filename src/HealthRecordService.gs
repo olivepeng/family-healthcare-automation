@@ -1,3 +1,4 @@
+// 拆解多行訊息、逐行呼叫 Parser 解析，並透過傳入的 repository 存檔
 function saveHealthRecords(fullMessage, repository) {
 
     const now = new Date();

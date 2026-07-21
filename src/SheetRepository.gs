@@ -1,3 +1,4 @@
+// 負責把單筆健康紀錄寫入 Google Sheets，是 saveHealthRecords 預設的 repository 實作
 const SheetRepository = {
 
   save(record) {

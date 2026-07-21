@@ -1,3 +1,4 @@
+// LINE Webhook 進入點：接收事件、判斷退出指令、觸發解析與存檔、組出回覆訊息
 function doPost(e) {
   const json = JSON.parse(e.postData.contents);
   const event = json.events[0];

@@ -1,3 +1,4 @@
+// 封裝所有對 LINE API 的呼叫：回覆訊息、群組/多人室退出
 function reply(replyToken, text) {
   if (CONFIG.DEBUG) {
     Logger.log("====== Reply ======");

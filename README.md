@@ -25,7 +25,7 @@ Users can simply send health records through LINE, and the system automatically 
 - [🛣 Roadmap](#-roadmap)
 - [🛠 Technologies](#-technologies)
 - [📚 Technical Highlights](#-technical-highlights)
-- [👩‍💻 Author](#-author)
+- [👩‍💻 About the Author](#-about-the-author)
 - [📄 License](#-license)
 
 ---
@@ -381,7 +381,7 @@ Through this project, I practiced:
 
 ---
 
-# 👩‍💻 Author
+# 👩‍💻 About the Author
 
 **Olive Peng**
 

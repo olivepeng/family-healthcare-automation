@@ -1,6 +1,8 @@
 # Family Healthcare Automation
 
-A lightweight healthcare record automation system built with **Google Apps Script**, **LINE Messaging API**, and **Google Sheets**.
+> A serverless healthcare record automation project built with Google Apps Script, LINE Messaging API, and Google Sheets.
+
+I built this project to simplify recording children's health conditions during illness. Instead of manually writing temperatures and medications, family members can send messages through LINE, and the records are automatically organized into Google Sheets.
 
 Users can simply send health records through LINE, and the system automatically parses the message, stores structured data into Google Sheets, and replies with a confirmation message.
 
@@ -11,28 +13,28 @@ Users can simply send health records through LINE, and the system automatically 
 
 ---
 
-# 📋 Contents
+## Contents
 
-- [📱 Demo](#-demo)
-- [🚀 Highlights](#-highlights)
-- [📖 Overview](#-overview)
-- [✨ Features](#-features)
-- [🏗 Architecture](#-architecture)
-- [⚙ Installation](#-installation)
-- [🧪 Testing](#-testing)
-- [💡 Design Decisions](#-design-decisions)
-- [🔐 Security](#-security)
-- [🛣 Roadmap](#-roadmap)
-- [🛠 Technologies](#-technologies)
-- [📚 Technical Highlights](#-technical-highlights)
-- [👩‍💻 About the Author](#-about-the-author)
-- [📄 License](#-license)
+- [Demo](#demo)
+- [Highlights](#highlights)
+- [Overview](#overview)
+- [Features](#features)
+- [Architecture](#architecture)
+- [Installation](#installation)
+- [Testing](#testing)
+- [Design Decisions](#design-decisions)
+- [Security](#security)
+- [Future Improvements](#future-improvements)
+- [Technologies](#technologies)
+- [What I Learned](#what-i-learned)
+- [About the Author](#about-the-author)
+- [License](#license)
 
 ---
 
-# 📱 Demo
+## Demo
 
-## LINE Bot
+### LINE Bot
 
 Users can send one or multiple health records in a single message.
 
@@ -40,7 +42,7 @@ Users can send one or multiple health records in a single message.
 
 ---
 
-## Google Sheets
+### Google Sheets
 
 Every valid record is automatically stored in Google Sheets.
 
@@ -48,7 +50,7 @@ Every valid record is automatically stored in Google Sheets.
 
 ---
 
-## Google Apps Script Project
+### Google Apps Script Project
 
 Project source code is organized into independent layers for maintainability.
 
@@ -56,48 +58,36 @@ Project source code is organized into independent layers for maintainability.
 
 ---
 
-# 🚀 Highlights
+## Highlights
 
-- Layered Architecture (Webhook → Service → Repository)
 - LINE Messaging API integration
 - Google Apps Script Web App
+- Google Sheets integration
 - Automatic health record parsing
 - Multi-line message support
-- Repository Pattern
-- Script Properties for secure credential management
-- Google Sheets integration
 - Integration testing
-- Lightweight serverless architecture
+- Layered architecture
 
 ---
 
-# 📖 Overview
+## Overview
 
-Family Healthcare Automation was created to simplify daily healthcare record management for families.
-
-Instead of manually writing down temperatures, medications, and observations, users simply send a LINE message such as:
-
-```text
-2:00 38°C 塞劑 剛睡醒
-6:30 37.8 依普芬5ml
-```
+Users simply send health records through LINE.
 
 The system automatically:
 
 - Parses each record
-- Extracts temperature
-- Extracts medication
-- Extracts observations
-- Stores structured data
+- Extracts temperature, medication, and observations
+- Stores structured data in Google Sheets
 - Replies with a confirmation message
 
 The project is completely serverless and runs on Google Apps Script.
 
 ---
 
-# ✨ Features
+## Features
 
-## Health Record Parsing
+### Health Record Parsing
 
 Supports:
 
@@ -132,7 +122,7 @@ Medicine: 依普芬5ml
 
 ---
 
-## LINE Bot
+### LINE Bot
 
 - Receive messages
 - Parse records
@@ -141,7 +131,7 @@ Medicine: 依普芬5ml
 
 ---
 
-## Google Sheets
+### Google Sheets
 
 Automatically appends new rows.
 
@@ -154,7 +144,7 @@ Example:
 
 ---
 
-# 🏗 Architecture
+## Architecture
 
 ```mermaid
 flowchart TD
@@ -171,7 +161,7 @@ H --> I[LINE Reply]
 
 ---
 
-## Project Structure
+### Project Structure
 
 ```text
 family-healthcare-automation/
@@ -199,7 +189,7 @@ family-healthcare-automation/
 
 ---
 
-# 🏛 Layered Design
+## Layered Design
 
 ```
 Presentation Layer
@@ -228,17 +218,17 @@ Each layer has a single responsibility, making the project easier to maintain an
 
 ---
 
-# ⚙ Installation
+## Installation
 
-## 1. Clone Repository
+### 1. Clone Repository
 
 ```bash
-git clone https://github.com/<your-account>/family-healthcare-automation.git
+git clone https://github.com/olivepeng/family-healthcare-automation.git
 ```
 
 ---
 
-## 2. Open Google Apps Script
+### 2. Open Google Apps Script
 
 Create a new Google Apps Script project.
 
@@ -248,7 +238,7 @@ If you want to run the provided test utilities, also copy the files under the `t
 
 ---
 
-## 3. Configure Script Properties
+### 3. Configure Script Properties
 
 Create the following Script Property:
 
@@ -258,7 +248,7 @@ Create the following Script Property:
 
 ---
 
-## 4. Deploy Web App
+### 4. Deploy Web App
 
 Deploy as:
 
@@ -272,7 +262,7 @@ Anyone
 
 ---
 
-## 5. Configure LINE Webhook
+### 5. Configure LINE Webhook
 
 Paste the deployed Web App URL into the LINE Messaging API Webhook URL.
 
@@ -287,7 +277,7 @@ Disable:
 
 ---
 
-# 🧪 Testing
+## Testing
 
 The project includes unit and integration tests, runnable directly from the Apps Script editor:
 
@@ -316,7 +306,7 @@ The test will:
 
 ---
 
-# 💡 Design Decisions
+## Design Decisions
 
 | Decision | Reason |
 |----------|--------|
@@ -329,7 +319,7 @@ The test will:
 
 ---
 
-# 🔐 Security
+## Security
 
 The repository does **NOT** contain:
 
@@ -343,16 +333,14 @@ Google Apps Script → Script Properties
 
 ---
 
-# 🛣 Roadmap
-
-Future improvements:
+## Future Improvements
 
 - [ ] Export CSV
 - [ ] Data visualization
 
 ---
 
-# 🛠 Technologies
+## Technologies
 
 | Category | Technology |
 |-----------|------------|
@@ -365,9 +353,9 @@ Future improvements:
 
 ---
 
-# 📚 Technical Highlights
+## What I Learned
 
-Through this project, I practiced:
+Through this project, I gained experience with:
 
 - REST API integration
 - Google Apps Script development
@@ -381,13 +369,11 @@ Through this project, I practiced:
 
 ---
 
-# 👩‍💻 About the Author
+## About the Author
 
 **Olive Peng**
 
-Software Engineer
-
-Interested in:
+Software Engineer interested in:
 
 - Test Automation
 - SDET
@@ -397,6 +383,6 @@ Interested in:
 
 ---
 
-# 📄 License
+## License
 
 This project is licensed under the MIT License.
